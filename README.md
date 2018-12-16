@@ -27,4 +27,5 @@ I also include tslm model in mymain.R. TSLM is a method used to fit linear model
 I can reach a decent result (1653.36) by using tslm.
 
 - Evaulation Matrix
+
 ![alt text](https://github.com/hyestt/Walmart-Recruiting---Store-Sales-Forecasting/blob/master/Result.png)
