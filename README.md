@@ -5,7 +5,7 @@ https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting
 Use historical sales data for 45 Walmart stores located in different regions. Each store contains many departments.
 
 ### Target
-Forecast the weekly sales for 99 departments at 45 Walmart stores located in different regions.
+Forecast the weekly sales for 99 departments at 45 Walmart stores located in different regions. My evaluation procedure is formulated like backtesting for stock trading systems: when predicting the sales of a month, I am only allowed to use all the information available till that month --- cannot peek into the future.
 
 ### Main File
 Save my main file as mymain.R
@@ -19,8 +19,12 @@ After running a 10-fold cross validation for loop , I use simple model , snaive 
 In every time series for loop, it's important to add the previous fold.csv into new train data.
 
 ### Result 
+![alt text](https://github.com/hyestt/Walmart-Recruiting---Store-Sales-Forecasting/blob/master/time%20series%20regression%20model.png)
+
 - TSLM model
 
 I also include tslm model in mymain.R. TSLM is a method used to fit linear models to time series including trend and seasonality components. 
 I can reach a decent result (1653.36) by using tslm.
 
+- Evaulation Matrix
+![alt text](https://github.com/hyestt/Walmart-Recruiting---Store-Sales-Forecasting/blob/master/Result.png)
